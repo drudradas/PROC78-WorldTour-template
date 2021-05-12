@@ -18,7 +18,7 @@ export default class WelcomeScreen extends Component {
         return (
             <View style={styles.container}>
                 <SafeAreaView style={styles.droidSafeArea} />
-                <ImageBackground source={require('../assets/travel.gif')} style={styles.backgroundImage}>
+                <ImageBackground source={require('../assets/Sky.gif')} style={styles.backgroundImage}>
                     <View style={styles.titleBar}>
                         <Image source={require("../assets/travelicon.jpg")} style={{ width: 150, height: 150 }}></Image>
                         <Text style={styles.titleText}>World Tour</Text>
@@ -31,14 +31,14 @@ export default class WelcomeScreen extends Component {
                         this.props.navigation.navigate("WorldMap")
                     }>
                         <Text style={styles.routeText}>World Map</Text>
-                        <Image source={require("../assets/map.png")} style={styles.routeImage}></Image>
+                        <Image source={require("../assets/Worldmap.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
                         this.props.navigation.navigate("DailySightings")
                     }>
                         <Text style={styles.routeText}>Daily Sightings</Text>
-                        <Image source={require("../assets/daily_pictures.png")} style={styles.routeImage}></Image>
+                        <Image source={require("../assets/Daily.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
                 </ImageBackground>
             </View>
